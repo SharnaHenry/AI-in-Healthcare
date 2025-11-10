@@ -1,0 +1,57 @@
+/* Media Query Override Mobile */
+
+@media only screen and (max-wdith: 599px;)
+{
+  header {background-color: #ffffff;}
+
+  .collapsible-menu {
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #40abbe;
+  }
+  .collapsible-menu label {
+    font-size: 120%;
+    display: block;
+    cursor: pointer;
+    background: url ('hamburger-icon.png') no-repeat left center;
+    padding: 10px 10px 10px 40px;
+    color: #40abbe
+    cursor: pointer;
+  }
+  input:checked +label {
+    background-image: url('close-icon.png');
+  }
+  nav.nav1 {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding: 0 0 0 50px;
+  }
+
+  /* Toggle Effect */
+  input: :checked ~ label {
+    background-image: url('close-icon.png');
+  }
+
+ input:checked ~ nav.nav1 {
+    max-height: 200%;
+    transition: max-height 0.25s ease-in;
+  }
+
+}
+
+/* *overrides css for mobile views up to 599px wide */
+/* END OF MOBILE OVERIDE STYLYING */
+
+
+/* Media Query Overide Tablet */
+  
+@media only screen and (min-width: 600px) and (max-width: 1199px;)
+{
+  header {background-color: #00ff00;}
+}
+  /* overrides css for tablet/small desktop views between 600px and 1199px wide */
+/* END OF TABLET OVERIDE STYLING */
+
+ 
